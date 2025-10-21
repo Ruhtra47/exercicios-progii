@@ -1,0 +1,6 @@
+matrix_utils.c: In function ‘matrix_read’:
+matrix_utils.c:15:21: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+   15 |             scanf("%d", matrix[i][j]);
+      |                    ~^   ~~~~~~~~~~~~
+      |                     |            |
+      |                     int *        int

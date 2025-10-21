@@ -1,0 +1,48 @@
+==45908== Memcheck, a memory error detector
+==45908== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==45908== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==45908== Command: Resultados/arthur/matrix_utils/prog Resultados/arthur/matrix_utils/Casos/1
+==45908== Parent PID: 45907
+==45908== 
+==45908== Use of uninitialised value of size 8
+==45908==    at 0x48EC146: __vfscanf_internal (vfscanf-internal.c:1976)
+==45908==    by 0x48DBEC5: __isoc99_scanf (isoc99_scanf.c:30)
+==45908==    by 0x109F18: matrix_read (in /home/auangelo/dev/exercicios-progii/03_bibliotecas/bibli_02/Resultados/arthur/matrix_utils/prog)
+==45908==    by 0x109419: main (in /home/auangelo/dev/exercicios-progii/03_bibliotecas/bibli_02/Resultados/arthur/matrix_utils/prog)
+==45908== 
+==45908== Invalid write of size 4
+==45908==    at 0x48EC146: __vfscanf_internal (vfscanf-internal.c:1976)
+==45908==    by 0x48DBEC5: __isoc99_scanf (isoc99_scanf.c:30)
+==45908==    by 0x109F18: matrix_read (in /home/auangelo/dev/exercicios-progii/03_bibliotecas/bibli_02/Resultados/arthur/matrix_utils/prog)
+==45908==    by 0x109419: main (in /home/auangelo/dev/exercicios-progii/03_bibliotecas/bibli_02/Resultados/arthur/matrix_utils/prog)
+==45908==  Address 0xfefffa60 is not stack'd, malloc'd or (recently) free'd
+==45908== 
+==45908== 
+==45908== Process terminating with default action of signal 11 (SIGSEGV)
+==45908==  Access not within mapped region at address 0xFEFFFA60
+==45908==    at 0x48EC146: __vfscanf_internal (vfscanf-internal.c:1976)
+==45908==    by 0x48DBEC5: __isoc99_scanf (isoc99_scanf.c:30)
+==45908==    by 0x109F18: matrix_read (in /home/auangelo/dev/exercicios-progii/03_bibliotecas/bibli_02/Resultados/arthur/matrix_utils/prog)
+==45908==    by 0x109419: main (in /home/auangelo/dev/exercicios-progii/03_bibliotecas/bibli_02/Resultados/arthur/matrix_utils/prog)
+==45908==  If you believe this happened as a result of a stack
+==45908==  overflow in your program's main thread (unlikely but
+==45908==  possible), you can try to increase the size of the
+==45908==  main thread stack using the --main-stacksize= flag.
+==45908==  The main thread stack size used in this run was 8388608.
+==45908== 
+==45908== HEAP SUMMARY:
+==45908==     in use at exit: 4,096 bytes in 1 blocks
+==45908==   total heap usage: 1 allocs, 0 frees, 4,096 bytes allocated
+==45908== 
+==45908== LEAK SUMMARY:
+==45908==    definitely lost: 0 bytes in 0 blocks
+==45908==    indirectly lost: 0 bytes in 0 blocks
+==45908==      possibly lost: 0 bytes in 0 blocks
+==45908==    still reachable: 4,096 bytes in 1 blocks
+==45908==         suppressed: 0 bytes in 0 blocks
+==45908== Reachable blocks (those to which a pointer was found) are not shown.
+==45908== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==45908== 
+==45908== Use --track-origins=yes to see where uninitialised values come from
+==45908== For lists of detected and suppressed errors, rerun with: -s
+==45908== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

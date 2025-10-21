@@ -1,0 +1,65 @@
+main.c: In function ‘main’:
+main.c:14:21: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+   14 |             scanf("%d", matrix1[i][j]);
+      |                    ~^   ~~~~~~~~~~~~~
+      |                     |             |
+      |                     int *         int
+main.c:16:9: error: redeclaration of ‘rows2’ with no linkage
+   16 |     int rows2, cols2;
+      |         ^~~~~
+main.c:7:23: note: previous declaration of ‘rows2’ with type ‘int’
+    7 |     int rows1, cols1, rows2, cols2;
+      |                       ^~~~~
+main.c:16:16: error: redeclaration of ‘cols2’ with no linkage
+   16 |     int rows2, cols2;
+      |                ^~~~~
+main.c:7:30: note: previous declaration of ‘cols2’ with type ‘int’
+    7 |     int rows1, cols1, rows2, cols2;
+      |                              ^~~~~
+main.c:23:21: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+   23 |             scanf("%d", matrix2[i][j]);
+      |                    ~^   ~~~~~~~~~~~~~
+      |                     |             |
+      |                     int *         int
+main.c:46:17: warning: implicit declaration of function ‘print_matrix’ [-Wimplicit-function-declaration]
+   46 |                 print_matrix(rows1, cols1, result);
+      |                 ^~~~~~~~~~~~
+main.c:50:17: warning: implicit declaration of function ‘print_dim_error’ [-Wimplicit-function-declaration]
+   50 |                 print_dim_error();
+      |                 ^~~~~~~~~~~~~~~
+main.c:107:9: error: switch jumps into scope of identifier with variably modified type
+  107 |         default:
+      |         ^~~~~~~
+main.c:39:9: note: switch starts here
+   39 |         switch (opcao)
+      |         ^~~~~~
+main.c:98:40: note: ‘result2’ declared here
+   98 |             int result1[cols1][rows1], result2[cols2][rows2];
+      |                                        ^~~~~~~
+main.c:107:9: error: switch jumps into scope of identifier with variably modified type
+  107 |         default:
+      |         ^~~~~~~
+main.c:39:9: note: switch starts here
+   39 |         switch (opcao)
+      |         ^~~~~~
+main.c:98:17: note: ‘result1’ declared here
+   98 |             int result1[cols1][rows1], result2[cols2][rows2];
+      |                 ^~~~~~~
+main.c: At top level:
+main.c:113:6: warning: conflicting types for ‘print_matrix’; have ‘void(int,  int,  int (*)[c])’
+  113 | void print_matrix(int r, int c, int m[r][c])
+      |      ^~~~~~~~~~~~
+main.c:46:17: note: previous implicit declaration of ‘print_matrix’ with type ‘void(int,  int,  int (*)[c])’
+   46 |                 print_matrix(rows1, cols1, result);
+      |                 ^~~~~~~~~~~~
+main.c:126:6: warning: conflicting types for ‘print_dim_error’; have ‘void()’
+  126 | void print_dim_error()
+      |      ^~~~~~~~~~~~~~~
+main.c:50:17: note: previous implicit declaration of ‘print_dim_error’ with type ‘void()’
+   50 |                 print_dim_error();
+      |                 ^~~~~~~~~~~~~~~
+main.c: In function ‘print_dim_error’:
+main.c:128:5: warning: implicit declaration of function ‘print’; did you mean ‘printf’? [-Wimplicit-function-declaration]
+  128 |     print("Erro: as dimensoes da matriz nao correspondem\n");
+      |     ^~~~~
+      |     printf
