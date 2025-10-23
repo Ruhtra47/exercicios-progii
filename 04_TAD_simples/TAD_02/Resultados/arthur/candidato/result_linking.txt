@@ -1,0 +1,30 @@
+/usr/bin/ld: Resultados/arthur/candidato/eleicao.o: in function `InicializaEleicao':
+eleicao.c:(.text+0xb0): undefined reference to `LeCandidato'
+/usr/bin/ld: eleicao.c:(.text+0x109): undefined reference to `ObtemCargo'
+/usr/bin/ld: eleicao.c:(.text+0x23f): undefined reference to `ObtemCargo'
+/usr/bin/ld: Resultados/arthur/candidato/eleicao.o: in function `RealizaEleicao':
+eleicao.c:(.text+0x5dd): undefined reference to `VerificaIdCandidato'
+/usr/bin/ld: eleicao.c:(.text+0x658): undefined reference to `IncrementaVotoCandidato'
+/usr/bin/ld: eleicao.c:(.text+0x83a): undefined reference to `VerificaIdCandidato'
+/usr/bin/ld: eleicao.c:(.text+0x90e): undefined reference to `IncrementaVotoCandidato'
+/usr/bin/ld: Resultados/arthur/candidato/eleicao.o: in function `ImprimeResultadoEleicao':
+eleicao.c:(.text+0xb78): undefined reference to `ObtemVotos'
+/usr/bin/ld: eleicao.c:(.text+0xbd7): undefined reference to `ObtemVotos'
+/usr/bin/ld: eleicao.c:(.text+0xe01): undefined reference to `ObtemVotos'
+/usr/bin/ld: eleicao.c:(.text+0xe3c): undefined reference to `ObtemVotos'
+/usr/bin/ld: eleicao.c:(.text+0xf60): undefined reference to `ObtemVotos'
+/usr/bin/ld: Resultados/arthur/candidato/eleicao.o:eleicao.c:(.text+0xfbf): more undefined references to `ObtemVotos' follow
+/usr/bin/ld: Resultados/arthur/candidato/eleicao.o: in function `ImprimeResultadoEleicao':
+eleicao.c:(.text+0x106b): undefined reference to `EhMesmoCandidato'
+/usr/bin/ld: eleicao.c:(.text+0x110e): undefined reference to `ObtemVotos'
+/usr/bin/ld: eleicao.c:(.text+0x11a8): undefined reference to `ObtemVotos'
+/usr/bin/ld: eleicao.c:(.text+0x1228): undefined reference to `CalculaPercentualVotos'
+/usr/bin/ld: eleicao.c:(.text+0x1299): undefined reference to `ImprimeCandidato'
+/usr/bin/ld: eleicao.c:(.text+0x1366): undefined reference to `ObtemVotos'
+/usr/bin/ld: eleicao.c:(.text+0x13a1): undefined reference to `ObtemVotos'
+/usr/bin/ld: eleicao.c:(.text+0x147c): undefined reference to `EhMesmoCandidato'
+/usr/bin/ld: eleicao.c:(.text+0x14fb): undefined reference to `ObtemVotos'
+/usr/bin/ld: eleicao.c:(.text+0x15eb): undefined reference to `ObtemVotos'
+/usr/bin/ld: eleicao.c:(.text+0x164b): undefined reference to `CalculaPercentualVotos'
+/usr/bin/ld: eleicao.c:(.text+0x1698): undefined reference to `ImprimeCandidato'
+collect2: error: ld returned 1 exit status

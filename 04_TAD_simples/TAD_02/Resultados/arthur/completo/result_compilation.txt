@@ -1,0 +1,35 @@
+candidato.c: In function ‘CriaCandidato’:
+candidato.c:7:21: warning: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+    7 |     tCandidato c = {nome, partido, cargo, id, 0};
+      |                     ^~~~
+candidato.c:7:21: note: (near initialization for ‘c.nome[0]’)
+candidato.c:7:27: warning: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+    7 |     tCandidato c = {nome, partido, cargo, id, 0};
+      |                           ^~~~~~~
+candidato.c:7:27: note: (near initialization for ‘c.nome[1]’)
+candidato.c:7:20: warning: missing braces around initializer [-Wmissing-braces]
+    7 |     tCandidato c = {nome, partido, cargo, id, 0};
+      |                    ^
+      |                     {                          }
+candidato.c: In function ‘LeCandidato’:
+candidato.c:16:24: warning: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘char *’ [-Wformat=]
+   16 |     scanf("%*c,%*c,%c,%d", nome, partido, &cargo, &id);
+      |                       ~^         ~~~~~~~
+      |                        |         |
+      |                        int *     char *
+      |                       %hhd
+candidato.c:16:11: warning: too many arguments for format [-Wformat-extra-args]
+   16 |     scanf("%*c,%*c,%c,%d", nome, partido, &cargo, &id);
+      |           ^~~~~~~~~~~~~~~
+candidato.c: In function ‘EhMesmoCandidato’:
+candidato.c:29:23: error: invalid operands to binary == (have ‘tCandidato’ and ‘tCandidato’)
+   29 |     return candidato1 == candidato2;
+      |                       ^~
+candidato.c: In function ‘VerificaIdCandidato’:
+candidato.c:25:1: warning: control reaches end of non-void function [-Wreturn-type]
+   25 | }
+      | ^
+candidato.c: In function ‘EhMesmoCandidato’:
+candidato.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^

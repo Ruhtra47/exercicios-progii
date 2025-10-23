@@ -1,0 +1,5 @@
+/usr/bin/ld: Resultados/arthur/eleicao/main.o: in function `main':
+main.c:(.text+0x2e): undefined reference to `InicializaEleicao'
+/usr/bin/ld: main.c:(.text+0x6d): undefined reference to `RealizaEleicao'
+/usr/bin/ld: main.c:(.text+0xcf): undefined reference to `ImprimeResultadoEleicao'
+collect2: error: ld returned 1 exit status
