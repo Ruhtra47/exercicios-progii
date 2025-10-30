@@ -1,0 +1,1 @@
+valgrind: Resultados/arthur/jogada/prog: No such file or directory

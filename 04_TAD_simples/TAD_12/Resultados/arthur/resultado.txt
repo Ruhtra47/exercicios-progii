@@ -1,0 +1,21 @@
+Arquivos Esperados Corretos: 7 de 7
+Pastas Compiladas Corretamente: 4 de 4 
+Pastas Linkadas Corretamente: 4 de 4
+Teste main
+  - Resultados corretos: 6 de 6
+  - Valgrinds corretos: 6 de 6
+Nota de arthur para o teste main: 3.00
+Teste paciente
+  - Resultados corretos: 6 de 6
+  - Valgrinds corretos: 6 de 6
+Nota de arthur para o teste paciente: 3.00
+Teste lesao
+  - Resultados corretos: 6 de 6
+  - Valgrinds corretos: 6 de 6
+Nota de arthur para o teste lesao: 3.00
+Teste data
+  - Resultados corretos: 6 de 6
+  - Valgrinds corretos: 6 de 6
+Nota de arthur para o teste data: 1.00
+Nota de arthur: 0+(3.00)+(3.00)+(3.00)+(1.00)
+Nota de arthur: 10.00
