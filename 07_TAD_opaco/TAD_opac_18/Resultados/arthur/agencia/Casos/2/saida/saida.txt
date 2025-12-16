@@ -1,1 +1,7 @@
-valgrind: Resultados/arthur/agencia/prog: No such file or directory
+--- Agencia Bancaria ---
+A lista de operações suspeitas:
+Os dois correntistas com maior saldo são:
+Id: 123, Saldo: 0.00
+Id: 567, Saldo: 0.00
+O saldo total da agencia eh: 0.00
+

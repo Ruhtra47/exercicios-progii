@@ -28,7 +28,7 @@ void AdicionaConta(tAgencia *agencia, tConta *conta)
 void AdicionaOperacao(tAgencia *agencia, tOperacao *operacao)
 {
     agencia->numOperacoes++;
-    agencia->operacoes = (tOperacao *)realloc(agencia->operacoes, agencia->numOperacoes * sizeof(tOperacao *));
+    agencia->operacoes = (tOperacao **)realloc(agencia->operacoes, agencia->numOperacoes * sizeof(tOperacao *));
 
     agencia->operacoes[agencia->numOperacoes - 1] = operacao;
 }
@@ -84,7 +84,41 @@ void DestroiAgencia(tAgencia *agencia)
  *
  * @param agencia - A variável do tipo agencia que salvará os dados lidos
  */
-void LeOperacoes(tAgencia *agencia);
+void LeOperacoes(tAgencia *agencia)
+{
+    int numContas, numOperacoes, idConta;
+    float valorOperacao;
+    tConta *conta;
+
+    scanf("%d", &numContas);
+
+    for (int i = 0; i < numContas; i++)
+    {
+        scanf("%d", &idConta);
+
+        if (idConta > 0)
+        {
+            tConta *novaConta = CriaConta(idConta);
+
+            AdicionaConta(agencia, novaConta);
+        }
+    }
+
+    scanf("%d", &numOperacoes);
+
+    for (int i = 0; i < numOperacoes; i++)
+    {
+        scanf("%d %f", &idConta, &valorOperacao);
+
+        conta = BuscaContaPorId(agencia, idConta);
+
+        if (conta != NULL)
+        {
+            tOperacao *novaOperacao = CriaOperacao(conta, valorOperacao);
+            AdicionaOperacao(agencia, novaOperacao);
+        }
+    }
+}
 
 /**
  * @brief Busca uma conta na agencia que possui um id específico
@@ -112,11 +146,13 @@ tConta *BuscaContaPorId(tAgencia *agencia, int id)
  */
 void ImprimeOperacoesSuspeitas(tAgencia *agencia)
 {
-    printf("A lista de operações suspeitas:");
+    printf("\nA lista de operações suspeitas:\n");
 
     for (int i = 0; i < agencia->numOperacoes; i++)
     {
-        if (ConsultaValorOperacao(agencia->operacoes[i]) > LIMITE_SUSPEITO || ConsultaValorOperacao(agencia->operacoes[i]) < -LIMITE_SUSPEITO)
+        tOperacao *op = agencia->operacoes[i];
+        float valor = ConsultaValorOperacao(op);
+        if ((valor > LIMITE_SUSPEITO) || (valor < -LIMITE_SUSPEITO))
         {
             ImprimeOperacao(agencia->operacoes[i]);
         }
@@ -137,6 +173,8 @@ void ImprimeDoisCorrentistasComMaiorSaldo(tAgencia *agencia)
     qsort(contasOrdenadas, agencia->numContas, sizeof(tConta *), ComparaContasPorSaldo);
 
     int limite = (agencia->numContas < 2) ? agencia->numContas : 2;
+
+    printf("Os dois correntistas com maior saldo são:\n");
 
     for (int i = 0; i < limite; i++)
     {

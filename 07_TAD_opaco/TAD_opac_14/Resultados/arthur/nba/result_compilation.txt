@@ -1,0 +1,4 @@
+nba.c: In function ‘RodaNBA’:
+nba.c:66:28: warning: assignment to ‘struct franquia **’ from incompatible pointer type ‘struct franquia *’ [-Wincompatible-pointer-types]
+   66 |             nba->franquias = (tFranquia)realloc(nba->franquias, (nba->qtd_franquias + 1) * sizeof(struct nba));
+      |                            ^

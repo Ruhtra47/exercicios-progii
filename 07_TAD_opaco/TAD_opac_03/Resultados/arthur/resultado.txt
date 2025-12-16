@@ -1,0 +1,21 @@
+Arquivos Esperados Corretos: 4 de 5
+Pastas Compiladas Corretamente: 3 de 4 
+Pastas Linkadas Corretamente: 2 de 4
+Teste main
+  - Resultados corretos: 0 de 19
+  - Valgrinds corretos: 0 de 19
+Nota de arthur para o teste main: 0
+Teste completo
+  - Resultados corretos: 0 de 19
+  - Valgrinds corretos: 0 de 19
+Nota de arthur para o teste completo: 0
+Teste locadora
+  - Resultados corretos: 19 de 19
+  - Valgrinds corretos: 19 de 19
+Nota de arthur para o teste locadora: 2.50
+Teste filme
+  - Resultados corretos: 19 de 19
+  - Valgrinds corretos: 19 de 19
+Nota de arthur para o teste filme: 2.50
+Nota de arthur: 0+(2.50)+(0)+(0)+(2.50)
+Nota de arthur: 5.00

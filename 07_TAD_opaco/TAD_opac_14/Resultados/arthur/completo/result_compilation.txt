@@ -1,0 +1,15 @@
+franquia.c: In function ‘LeFranquia’:
+franquia.c:41:13: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[32]’ [-Wformat=]
+   41 |     scanf("%s %s\n", &franquia->nome, &franquia->conf);
+      |            ~^        ~~~~~~~~~~~~~~~
+      |             |        |
+      |             char *   char (*)[32]
+franquia.c:41:16: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘char (*)[6]’ [-Wformat=]
+   41 |     scanf("%s %s\n", &franquia->nome, &franquia->conf);
+      |               ~^                      ~~~~~~~~~~~~~~~
+      |                |                      |
+      |                char *                 char (*)[6]
+nba.c: In function ‘RodaNBA’:
+nba.c:66:28: warning: assignment to ‘struct franquia **’ from incompatible pointer type ‘struct franquia *’ [-Wincompatible-pointer-types]
+   66 |             nba->franquias = (tFranquia)realloc(nba->franquias, (nba->qtd_franquias + 1) * sizeof(struct nba));
+      |                            ^

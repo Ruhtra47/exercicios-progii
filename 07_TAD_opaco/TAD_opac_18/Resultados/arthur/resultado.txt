@@ -1,6 +1,6 @@
-Arquivos Esperados Corretos: 5 de 7
-Pastas Compiladas Corretamente: 3 de 5 
-Pastas Linkadas Corretamente: 2 de 5
+Arquivos Esperados Corretos: 6 de 7
+Pastas Compiladas Corretamente: 4 de 5 
+Pastas Linkadas Corretamente: 3 de 5
 Teste main
   - Resultados corretos: 0 de 4
   - Valgrinds corretos: 0 de 4
@@ -15,11 +15,11 @@ Teste operacao
 Nota de arthur para o teste operacao: 2.00
 Teste agencia
   - Resultados corretos: 0 de 4
-  - Valgrinds corretos: 0 de 4
+  - Valgrinds corretos: 4 de 4
 Nota de arthur para o teste agencia: 0
 Teste conta
   - Resultados corretos: 4 de 4
   - Valgrinds corretos: 4 de 4
 Nota de arthur para o teste conta: 2.00
-Nota de arthur: 0+(0)+(0)+(2.00)+(0)+(2.00)
+Nota de arthur: 0+(0)+(0)+(0)+(2.00)+(2.00)
 Nota de arthur: 4.00
